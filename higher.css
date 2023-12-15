@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.runway__wrapper {
+  height: 100dvh;
+  width: 100%;
+  transform-origin: 93% 50%;
+  background-color: rgb(25, 34, 39);
+  z-index: 2;
+  position: relative;
+  -webkit-mask-image: linear-gradient(black, black), url("/oval.svg");
+          mask-image: linear-gradient(black, black), url("/oval.svg");
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-size: auto 300px auto;
+  -webkit-mask-position: center center, center right 7%;
+          mask-position: center center, center right 7%;
+  will-change: display;
+}
+@media (width <= 767px) {
+  .runway__wrapper {
+    -webkit-mask-image: linear-gradient(black, black), url("/oval2.svg");
+            mask-image: linear-gradient(black, black), url("/oval2.svg");
+    -webkit-mask-position: center center, center top 83%;
+    transform-origin: 50% 80%;
+  }
+}
+.runway__nav {
+  position: fixed;
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  margin-left: auto;
+  padding-top: 25px;
+  padding-right: 150px;
+  width: 100%;
+  z-index: 1000;
+}
+.runway__nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  pointer-events: all;
+}
+
+.kThkas {
+  top: 50%;
+  right: 7%;
+  transform: translate(9%, -50%);
+  width: auto;
+  max-height: 63vh;
+  position: absolute !important;
+}
+@media screen and (min-width: 1441px) {
+  .kThkas {
+    height: 31.25vw;
+  }
+}
+
+.runway__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(25, 34, 39);
+  height: 15vh;
+  align-items: center;
+  color: white;
+  pointer-events: all;
+}
+
+.runway__dippedIn {
+  background-color: rgb(170, 168, 168);
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.runway__dippedInRel {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.runway__dippedIn-text {
+  font-size: 64px;
+}
+
+.dipppedIn__img {
+  position: absolute;
+  overflow: hidden;
+  width: 676px;
+  height: 432px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  border-radius: 20px;
+}
+
+.runway__hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 50px;
+}
+
+.runway__title {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%;
+  letter-spacing: -0.04em;
+  color: rgb(255, 255, 255);
+  width: 600px;
+  font-size: clamp(2rem, 5vw + 1rem, 1000px);
+}
+
+.spacer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(170, 168, 168);
+}
+
+.tomford {
+  background-color: transparent;
+}/*# sourceMappingURL=higher.css.map */

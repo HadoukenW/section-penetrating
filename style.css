@@ -1,0 +1,67 @@
+/* :root {
+    --white-one: white;
+    --greenish-one: rgb(39, 182, 26);
+    --hoveredOne: rgb(145, 136, 136);
+    --mainTransition: .3s ease;
+    --secondary: rgb(163, 156, 156);
+    --MainFontSize: 64px;
+}
+
+p {
+    transition: var(--mainTransition);
+    &:hover {
+        color: var(--white-one);
+    }
+}
+
+a {
+    transition: var(--mainTransition);
+    color: var(--greenish-one);
+
+    &:hover {
+        color: var(--hoveredOne);
+    }
+}
+
+div {
+    color: var(--secondary);
+
+    &::first-letter {
+        color: var(--greenish-one);
+        font-size: var(--MainFontSize);
+        initial-letter: 4 4;
+        padding: 0 7px 7px 0;
+    }
+    
+
+}
+
+body {
+    
+}
+
+@media(width >= 992px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media(width <= 992px) {
+    body {
+        background-color: rgb(32, 165, 50);
+    }
+}
+
+@media(width < 767px) {
+    body {
+        background-color: rgb(150, 172, 31);
+    }
+}
+
+@media(width <= 450px) {
+    body {
+        background-color: rgb(192, 24, 150);
+    }
+} */
+
+
